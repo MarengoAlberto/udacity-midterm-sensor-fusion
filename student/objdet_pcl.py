@@ -94,6 +94,12 @@ def show_range_image(frame, lidar_name):
     img_intensity = ri_intensity.astype(np.uint8)
     # step 6 : stack the range and intensity image vertically using np.vstack and convert the result to an unsigned 8-bit integer
     img_range_intensity = np.stack((img_range, img_intensity), axis=0).reshape(img_range.shape[0]*2, img_range.shape[1])
+
+    # Crop range image to +/- 90 deg. left and right of the forward-facing x-axis
+    deg90 = int(img_range_intensity.shape[1] / 4)
+    ri_center = int(img_range_intensity.shape[1]/2)
+    img_range_intensity = img_range_intensity[:,ri_center-deg90:ri_center+deg90]
+
     #######
     ####### ID_S1_EX1 END #######
     
@@ -163,7 +169,7 @@ def bev_from_pcl(lidar_pcl, configs):
     # cv2.imshow('img_intensity', img_intensity)
     # cv2.waitKey(0)
     # cv2.destroyAllWindows()
-    #######
+    # #######
     ####### ID_S2_EX2 END ####### 
 
 

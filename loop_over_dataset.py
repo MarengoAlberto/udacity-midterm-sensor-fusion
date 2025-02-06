@@ -131,7 +131,7 @@ configs_det = det.load_configs(model_name='darknet') # options are 'darknet', 'f
 model_det = det.create_model(configs_det)
 model_det = model_det.float()
 
-configs_det.use_labels_as_objects = False # True = use groundtruth labels as objects, False = use model-based detection
+configs_det.use_labels_as_objects = True # True = use groundtruth labels as objects, False = use model-based detection
 
 ## Uncomment this setting to restrict the y-range in the final project
 # configs_det.lim_y = [-25, 25] 
