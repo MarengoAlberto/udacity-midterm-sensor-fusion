@@ -2,6 +2,7 @@
 
 This is a template submission for the midterm second course in the  [Udacity Self-Driving Car Engineer Nanodegree Program](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013?promo=SUPER50&coupon=SUPER50&utm_source=gsem_brand&utm_medium=ads_r&utm_campaign=22049875362_c_individuals&utm_term=172849705615&utm_keyword=udacity%20self-driving%20car%20engineer_p&utm_source=gsem_brand&utm_medium=ads_r&utm_campaign=22049875362_c_individuals&utm_term=172849705615&utm_keyword=udacity%20self-driving%20car%20engineer_p&gad_source=1&gclid=CjwKCAiA2JG9BhAuEiwAH_zf3us7hnVYTwRrlEYojZfSswlRxH4H5zpHITXM1BiGXdQIEGXabuWOyxoC8PQQAvD_BwE) : 3D Object Detection (Midterm). 
 
+NOTE: This submission's code was checked and validated using the [repo](https://github.com/mithul12/midterm-sensor-fusion/tree/main).
 
 # 3D Object Detection Project Requirements - Rubric
 
